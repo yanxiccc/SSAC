@@ -1,5 +1,6 @@
 # SSAC: Transfer self-supervised learning for automatic audio captioning
 This repository contains source code for our paper [SSAC: Transfer self-supervised learning for automatic audio captioning](https://dcase.community/documents/workshop2021/proceedings/DCASE2021Workshop_Mei_68.pdf).
+![image](https://github.com/yanxiccc/SSAC/blob/main/SSAC.png)
 ## Set up environment
 * Create a conda environment with dependencies: `conda env create -f environment.yml -n name`
 * All of our experiments are running on RTX 30 series GPUs with CUDA11. This environment may just work for RTX 30x GPUs.
