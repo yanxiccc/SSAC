@@ -1,5 +1,5 @@
 mode: 'train'  
-dataset: 'Clotho'
+dataset: 'Audioset'
 sos_token: Yes
 wav:
   sr: 32000
@@ -9,7 +9,7 @@ wav:
   n_mels: 64
 
 encoder:
-  model: 'audioset'  
+  model: 'AudioMAE'  #MaskSpec SSAST
   freeze: No
   pretrained: Yes
 
