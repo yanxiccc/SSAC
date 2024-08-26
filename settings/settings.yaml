@@ -1,0 +1,44 @@
+mode: 'train'  
+dataset: 'Clotho'
+sos_token: Yes
+wav:
+  sr: 32000
+  window_length: 1024
+  window_size: 1024
+  hop_length: 160 #160 
+  n_mels: 64
+
+encoder:
+  model: 'audioset'  
+  freeze: No
+  pretrained: Yes
+
+decoder:
+  nhead: 8
+  nhid: 512
+  nlayers: 4              
+  dropout: 0.2
+  dim_feedforward: 2048
+  activation: 'gelu'
+
+word_embedding:
+  pretrained: Yes 
+  freeze: No 
+
+data:
+  batch_size: 32
+  num_workers: 0
+ 
+training:
+  label_smoothing: Yes
+  epochs: 30
+  lr: !!float 2e-4   #2e-4
+  clip_grad: 2
+  seed: 20
+
+path:
+  vocabulary: 'data/Clotho/pickles/words_list.p'
+  encoder: 'pretrained_models/finetuned.pth'
+  word2vec: 'pretrained_models/word2vec/w2v_512.model'
+  eval_model: '/public/home/02566/CYX/ACT-main/outputs/exp_name/model/best_model.pth'
+  
