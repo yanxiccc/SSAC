@@ -30,7 +30,7 @@ To prepare the dataset:
 
 #### Pretrained encoder
 
-We provide two pretrained encoders, one is a pretrained DeiT model, another is the DeiT model pretrained on AudioSet.
+We provide three pre-trained models: AudioMAE, MaskSpec and SSAST, and provide their download addresses.
 1. [AudioMAE](https://drive.google.com/file/d/18EsFOyZYvBYHkJ7_n7JFFWbj6crz01gq/view)
 2. [MaskSpec](https://drive.google.com/file/d/1TwP9JMq6EViaSXAhpNMuQW56RIbk-v-v/view)
 3. [SSAST](https://www.dropbox.com/s/ewrzpco95n9jdz6/SSAST-Base-Patch-400.pth?dl=1)
