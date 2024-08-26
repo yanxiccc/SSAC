@@ -63,7 +63,7 @@ class MAE_ACT(nn.Module):
                                         dropout=dropout)
         if config.encoder.pretrained:
             pretrained_encoder = torch.load(config.path.encoder)['model']#
-            if config.encoder.model == 'deit':
+            if config.encoder.model == 'auidoset':
                 dict_new = self.encoder.state_dict().copy()
                 trained_list = [i for i in pretrained_encoder.keys() if not ('head' in i or 'pos' in i)]
                 for i in range(len(trained_list)):
